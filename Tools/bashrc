@@ -206,7 +206,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 #specific the LANG
-LANG=zh_CN.GB18030
+LANG=en_US.UTF-8
 
 # User specific aliases and functions
 export svn=~/svn/busengine/
