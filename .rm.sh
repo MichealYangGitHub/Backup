@@ -11,9 +11,10 @@ count=`ls $RecyclePath | grep $name | wc -l`
 ((No=$count+1))
 
 if [ $count -gt 0 ];then
-    targetName="${timeNow}_$name_${No}"
+    targetName="$timeNow_$name_$No"
 else
-    targetName="${timeNow}_$name"
+    targetName="$timeNow_$name"
 fi
+echo $targetName
 
 mv $1 $RecyclePath/$targetName
